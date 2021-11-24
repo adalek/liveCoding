@@ -138,7 +138,9 @@ noise(1, .5).mult(osc(10, 0, .7)).pixelate(10).out()
 ///// SHADERS in P5js \\\\\
 
 p5 = new P5({width: window.innerWidth, height:window.innerHeight, mode: 'WEBGL'})
-shader = p5.loadShader("/Users/ags419/Documents/Code/classes/liveCoding/Class_Examples/shaders/basic.vert", "/Users/ags419/Documents/Code/classes/liveCoding/Class_Examples/shaders/ocean.frag");
+shader = p5.loadShader("/Users/qijiedong/Desktop/live-coding/liveCoding/Class_Examples/shaders/basic.vert", "/Users/qijiedong/Desktop/live-coding/liveCoding/Class_Examples/shaders/ocean.frag");
+
+///Users/qijiedong/Desktop/live-coding/liveCoding/Class_Examples/shaders/basic.vert
 
 p5.draw = ()=>{
   shader.setUniform("time", time);
